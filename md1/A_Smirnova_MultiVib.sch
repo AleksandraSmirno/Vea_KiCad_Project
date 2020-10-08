@@ -119,14 +119,6 @@ Wire Wire Line
 Wire Wire Line
 	2400 950  2400 1850
 Wire Wire Line
-	2400 2250 2400 3350
-Wire Wire Line
-	2400 3350 3200 3350
-Wire Wire Line
-	4500 3350 4500 3200
-Wire Wire Line
-	4500 2800 4500 2450
-Wire Wire Line
 	4500 1750 4500 1400
 Wire Wire Line
 	4000 1750 4000 950 
@@ -138,13 +130,6 @@ Wire Wire Line
 Connection ~ 3700 950 
 Wire Wire Line
 	3700 950  4000 950 
-Wire Wire Line
-	3200 3200 3200 3350
-Connection ~ 3200 3350
-Wire Wire Line
-	3200 3350 4500 3350
-Wire Wire Line
-	3200 2800 3200 2450
 Connection ~ 3200 950 
 Wire Wire Line
 	3200 950  2400 950 
@@ -168,48 +153,58 @@ Wire Wire Line
 	3700 2050 3700 2450
 Wire Wire Line
 	3700 2450 3600 2450
-Wire Wire Line
-	3850 2450 3850 2850
-Wire Wire Line
-	3850 2850 3700 2850
-Wire Wire Line
-	3700 2850 3700 3000
-Wire Wire Line
-	3700 3000 3500 3000
-Wire Wire Line
-	3850 2450 4000 2450
 Connection ~ 4000 2450
 Wire Wire Line
 	4000 2450 4100 2450
+$Comp
+L Dual_NPN_Transistor:MMDT2222A_2 U1
+U 1 1 5F7F92E7
+P 3900 3200
+F 0 "U1" H 3900 3665 50  0000 C CNN
+F 1 "MMDT2222A_2" H 3900 3574 50  0000 C CNN
+F 2 "" H 3950 2850 50  0001 C CNN
+F 3 "" H 3950 2850 50  0001 C CNN
+	1    3900 3200
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	3700 2450 3700 2800
+	2400 3550 3700 3550
 Wire Wire Line
-	3700 2800 3950 2800
+	2400 2250 2400 3550
 Wire Wire Line
-	3950 2800 3950 3000
+	4000 2850 4250 2850
 Wire Wire Line
-	3950 3000 4200 3000
+	4250 2850 4250 3750
+Wire Wire Line
+	4250 3750 3700 3750
+Wire Wire Line
+	3700 3750 3700 3550
+Connection ~ 3700 3550
+Wire Wire Line
+	3700 2850 3200 2850
+Wire Wire Line
+	3200 2450 3200 2850
+Wire Wire Line
+	4500 2450 4500 3550
+Wire Wire Line
+	4000 3550 4500 3550
+Wire Wire Line
+	3850 3550 3850 3650
+Wire Wire Line
+	3850 3650 4400 3650
+Wire Wire Line
+	4400 3650 4400 2750
+Wire Wire Line
+	4400 2750 4000 2750
+Wire Wire Line
+	4000 2750 4000 2450
+Wire Wire Line
+	3750 2450 3750 2750
+Wire Wire Line
+	3750 2750 3850 2750
+Wire Wire Line
+	3850 2750 3850 2850
+Wire Wire Line
+	3750 2450 3700 2450
 Connection ~ 3700 2450
-$Comp
-L Transistor_BJT:FFB2222A Q1
-U 1 1 5F7EB267
-P 3300 3000
-F 0 "Q1" H 3491 3046 50  0000 L CNN
-F 1 "FFB2222A" H 3491 2955 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 3500 3100 50  0001 C CNN
-F 3 "https://www.fairchildsemi.com/datasheets/FF/FFB2222A.pdf" H 3300 3000 50  0001 C CNN
-	1    3300 3000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:FFB2222A Q1
-U 2 1 5F7EBEE2
-P 4400 3000
-F 0 "Q1" H 4591 3046 50  0000 L CNN
-F 1 "FFB2222A" H 4591 2955 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4600 3100 50  0001 C CNN
-F 3 "https://www.fairchildsemi.com/datasheets/FF/FFB2222A.pdf" H 4400 3000 50  0001 C CNN
-	2    4400 3000
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
