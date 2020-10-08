@@ -1,0 +1,215 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "FET Audio Powe Amplifier"
+Date "2020-10-07"
+Rev "1.0"
+Comp "Drakkr"
+Comment1 "Top Level"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery BT1
+U 1 1 5F7E0279
+P 2400 2050
+F 0 "BT1" H 2508 2096 50  0000 L CNN
+F 1 "Battery" H 2508 2005 50  0000 L CNN
+F 2 "" V 2400 2110 50  0001 C CNN
+F 3 "~" V 2400 2110 50  0001 C CNN
+	1    2400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5F7E15CE
+P 3200 1250
+F 0 "D1" H 3193 1466 50  0000 C CNN
+F 1 "LED" H 3193 1375 50  0000 C CNN
+F 2 "" H 3200 1250 50  0001 C CNN
+F 3 "~" H 3200 1250 50  0001 C CNN
+	1    3200 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F7E1DD4
+P 4500 1900
+F 0 "R4" H 4570 1946 50  0000 L CNN
+F 1 "R" H 4570 1855 50  0000 L CNN
+F 2 "" V 4430 1900 50  0001 C CNN
+F 3 "~" H 4500 1900 50  0001 C CNN
+	1    4500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C2
+U 1 1 5F7E23A1
+P 4250 2450
+F 0 "C2" H 4365 2496 50  0000 L CNN
+F 1 "CP1" H 4365 2405 50  0000 L CNN
+F 2 "" H 4250 2450 50  0001 C CNN
+F 3 "~" H 4250 2450 50  0001 C CNN
+	1    4250 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5F7E27C4
+P 3450 2450
+F 0 "C1" H 3565 2496 50  0000 L CNN
+F 1 "CP1" H 3565 2405 50  0000 L CNN
+F 2 "" H 3450 2450 50  0001 C CNN
+F 3 "~" H 3450 2450 50  0001 C CNN
+	1    3450 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5F7E3ABA
+P 4500 1250
+F 0 "D2" H 4493 1466 50  0000 C CNN
+F 1 "LED" H 4493 1375 50  0000 C CNN
+F 2 "" H 4500 1250 50  0001 C CNN
+F 3 "~" H 4500 1250 50  0001 C CNN
+	1    4500 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F7E400F
+P 3200 1900
+F 0 "R1" H 3270 1946 50  0000 L CNN
+F 1 "R" H 3270 1855 50  0000 L CNN
+F 2 "" V 3130 1900 50  0001 C CNN
+F 3 "~" H 3200 1900 50  0001 C CNN
+	1    3200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F7E428A
+P 3700 1900
+F 0 "R2" H 3770 1946 50  0000 L CNN
+F 1 "R" H 3770 1855 50  0000 L CNN
+F 2 "" V 3630 1900 50  0001 C CNN
+F 3 "~" H 3700 1900 50  0001 C CNN
+	1    3700 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F7E42FF
+P 4000 1900
+F 0 "R3" H 4070 1946 50  0000 L CNN
+F 1 "R" H 4070 1855 50  0000 L CNN
+F 2 "" V 3930 1900 50  0001 C CNN
+F 3 "~" H 4000 1900 50  0001 C CNN
+	1    4000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1100 4500 950 
+Wire Wire Line
+	3200 950  3200 1100
+Wire Wire Line
+	2400 950  2400 1850
+Wire Wire Line
+	2400 2250 2400 3350
+Wire Wire Line
+	2400 3350 3200 3350
+Wire Wire Line
+	4500 3350 4500 3200
+Wire Wire Line
+	4500 2800 4500 2450
+Wire Wire Line
+	4500 1750 4500 1400
+Wire Wire Line
+	4000 1750 4000 950 
+Connection ~ 4000 950 
+Wire Wire Line
+	4000 950  4500 950 
+Wire Wire Line
+	3700 1750 3700 950 
+Connection ~ 3700 950 
+Wire Wire Line
+	3700 950  4000 950 
+Wire Wire Line
+	3200 3200 3200 3350
+Connection ~ 3200 3350
+Wire Wire Line
+	3200 3350 4500 3350
+Wire Wire Line
+	3200 2800 3200 2450
+Connection ~ 3200 950 
+Wire Wire Line
+	3200 950  2400 950 
+Wire Wire Line
+	3200 950  3700 950 
+Wire Wire Line
+	3200 1750 3200 1400
+Wire Wire Line
+	3300 2450 3200 2450
+Connection ~ 3200 2450
+Wire Wire Line
+	3200 2450 3200 2050
+Wire Wire Line
+	4400 2450 4500 2450
+Connection ~ 4500 2450
+Wire Wire Line
+	4500 2450 4500 2050
+Wire Wire Line
+	4000 2450 4000 2050
+Wire Wire Line
+	3700 2050 3700 2450
+Wire Wire Line
+	3700 2450 3600 2450
+Wire Wire Line
+	3850 2450 3850 2850
+Wire Wire Line
+	3850 2850 3700 2850
+Wire Wire Line
+	3700 2850 3700 3000
+Wire Wire Line
+	3700 3000 3500 3000
+Wire Wire Line
+	3850 2450 4000 2450
+Connection ~ 4000 2450
+Wire Wire Line
+	4000 2450 4100 2450
+Wire Wire Line
+	3700 2450 3700 2800
+Wire Wire Line
+	3700 2800 3950 2800
+Wire Wire Line
+	3950 2800 3950 3000
+Wire Wire Line
+	3950 3000 4200 3000
+Connection ~ 3700 2450
+$Comp
+L Transistor_BJT:FFB2222A Q1
+U 1 1 5F7EB267
+P 3300 3000
+F 0 "Q1" H 3491 3046 50  0000 L CNN
+F 1 "FFB2222A" H 3491 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 3500 3100 50  0001 C CNN
+F 3 "https://www.fairchildsemi.com/datasheets/FF/FFB2222A.pdf" H 3300 3000 50  0001 C CNN
+	1    3300 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:FFB2222A Q1
+U 2 1 5F7EBEE2
+P 4400 3000
+F 0 "Q1" H 4591 3046 50  0000 L CNN
+F 1 "FFB2222A" H 4591 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4600 3100 50  0001 C CNN
+F 3 "https://www.fairchildsemi.com/datasheets/FF/FFB2222A.pdf" H 4400 3000 50  0001 C CNN
+	2    4400 3000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

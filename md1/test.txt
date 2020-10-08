@@ -1,0 +1,11 @@
+ cd Desktop/  //change directory
+ ls //list files
+ git status //parādu visu failu statusus
+	new file: //jauns fails, bet nav pievienots
+	modified: //modificēts
+	nothing to commit, working tree clean //nekādas izmaiņas nav veiktas
+git add <nosaukums> //pievieno izmaiņas
+git commit -m "komentārs" //faila izmaiņas ir saglabātas
+git remote add origin https://github.com/cubeton/mynewrepository.git //pievieno lapu kur github saglabā izmaiņas
+git push origin <nosaukums> //push branch to github
+git pull origin master // lai dabūtu izmaiņas no git uz datora 
