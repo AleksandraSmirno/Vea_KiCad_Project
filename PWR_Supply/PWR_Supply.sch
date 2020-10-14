@@ -1,0 +1,165 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 550  600  2100 1300
+U 5F7F0C47
+F0 "Sheet5F7F0C46" 50
+F1 "220V_AC.sch" 50
+F2 "VCC" O R 2650 1050 50 
+F3 "GND" O R 2650 1850 50 
+$EndSheet
+$Sheet
+S 3050 2100 1150 1300
+U 5F868F1F
+F0 "Sheet5F868F1E" 50
+F1 "5V.sch" 50
+F2 "Vcc" I L 3050 2550 50 
+F3 "+5V" O R 4200 2450 50 
+F4 "GND" O R 4200 2550 50 
+$EndSheet
+$Sheet
+S 3050 600  1150 1300
+U 5F868FF7
+F0 "Sheet5F868FF6" 50
+F1 "3V3.sch" 50
+F2 "Vcc" I L 3050 1050 50 
+F3 "+3,3V" O R 4200 950 50 
+F4 "GND" O R 4200 1050 50 
+$EndSheet
+$Sheet
+S 3050 3600 1150 1300
+U 5F86C896
+F0 "Sheet5F86C895" 50
+F1 "9V.sch" 50
+F2 "Vcc" I L 3050 4050 50 
+F3 "+9V" O R 4200 3950 50 
+F4 "GND" O R 4200 4050 50 
+$EndSheet
+$Sheet
+S 3050 5100 1150 1300
+U 5F86C952
+F0 "Sheet5F86C951" 50
+F1 "12V.sch" 50
+F2 "Vcc" I L 3050 5550 50 
+F3 "+12V" O R 4200 5450 50 
+F4 "GND" O R 4200 5550 50 
+$EndSheet
+Wire Wire Line
+	2650 1050 2750 1050
+Wire Wire Line
+	2750 1050 2750 2550
+Connection ~ 2750 1050
+Wire Wire Line
+	2750 2550 2750 4050
+Connection ~ 2750 2550
+Wire Wire Line
+	2750 4050 2750 5550
+Connection ~ 2750 4050
+Wire Wire Line
+	2550 2000 2550 2100
+$Comp
+L power:GND #PWR04
+U 1 1 5F8869D2
+P 2550 2100
+F 0 "#PWR04" H 2550 1850 50  0001 C CNN
+F 1 "GND" H 2555 1927 50  0000 C CNN
+F 2 "" H 2550 2100 50  0001 C CNN
+F 3 "" H 2550 2100 50  0001 C CNN
+	1    2550 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2000 2700 1850
+Wire Wire Line
+	2700 1850 2650 1850
+Wire Wire Line
+	2550 2000 2700 2000
+Wire Wire Line
+	2750 1050 3050 1050
+Wire Wire Line
+	2750 2550 3050 2550
+Wire Wire Line
+	2750 4050 3050 4050
+Wire Wire Line
+	2750 5550 3050 5550
+Wire Wire Line
+	4200 950  5000 950 
+Wire Wire Line
+	4200 2450 4750 2450
+Wire Wire Line
+	4750 2450 4750 1050
+Entry Wire Line
+	5000 950  5100 850 
+Entry Wire Line
+	5000 1050 5100 950 
+Wire Wire Line
+	4200 3950 4850 3950
+Wire Wire Line
+	4200 5450 4950 5450
+Entry Wire Line
+	5000 1150 5100 1050
+Entry Wire Line
+	5000 1250 5100 1150
+Text GLabel 5100 700  2    50   Input ~ 0
+SpriegumuKopne
+Wire Wire Line
+	4200 5550 5000 5550
+Wire Wire Line
+	5000 5550 5000 4050
+Wire Wire Line
+	5000 2550 4200 2550
+Wire Wire Line
+	5000 2550 5000 1400
+Wire Wire Line
+	5000 1400 4300 1400
+Wire Wire Line
+	4300 1400 4300 1050
+Wire Wire Line
+	4300 1050 4200 1050
+Connection ~ 5000 2550
+Wire Wire Line
+	4200 4050 5000 4050
+Connection ~ 5000 4050
+Wire Wire Line
+	5000 4050 5000 2550
+Entry Wire Line
+	5000 1350 5100 1250
+Wire Wire Line
+	4750 1050 5000 1050
+Text Label 5100 850  0    50   ~ 0
+3,3V
+Text Label 5100 950  0    50   ~ 0
+5V
+Text Label 5100 1050 0    50   ~ 0
+9V
+Text Label 5100 1150 0    50   ~ 0
+12V
+Text Label 5100 1250 0    50   ~ 0
+GND
+Wire Wire Line
+	4850 1150 5000 1150
+Wire Wire Line
+	4950 1250 5000 1250
+Wire Wire Line
+	4950 1250 4950 5450
+Wire Wire Line
+	4850 1150 4850 3950
+Wire Wire Line
+	5000 1400 5000 1350
+Connection ~ 5000 1400
+Wire Bus Line
+	5100 700  5100 1350
+$EndSCHEMATC
