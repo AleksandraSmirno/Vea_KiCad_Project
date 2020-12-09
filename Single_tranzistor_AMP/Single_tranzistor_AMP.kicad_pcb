@@ -10,8 +10,18 @@
   )
 
   (page A4)
+  (title_block
+    (title Single_Transistor_AMP)
+    (date 2020-12-09)
+    (rev V1.0)
+    (company VeA)
+    (comment 1 A.Smirnova)
+  )
+
   (layers
     (0 F.Cu signal)
+    (1 In1.Cu power)
+    (2 In2.Cu power)
     (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -60,7 +70,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -115,6 +125,15 @@
     (add_net "Net-(C3-Pad1)")
     (add_net "Net-(C3-Pad2)")
     (add_net "Net-(Q1-Pad3)")
+  )
+
+  (net_class Power ""
+    (clearance 0.2)
+    (trace_width 0.75)
+    (via_dia 0.8)
+    (via_drill 0.4)
+    (uvia_dia 0.3)
+    (uvia_drill 0.1)
   )
 
   (module Capacitor_THT:CP_Axial_L11.0mm_D5.0mm_P18.00mm_Horizontal (layer F.Cu) (tedit 5AE50EF2) (tstamp 5F870B9C)
