@@ -20,7 +20,7 @@ P 3650 1950
 F 0 "Q1" H 3840 1996 50  0000 L CNN
 F 1 "2N4401" H 3840 1905 50  0000 L CNN
 F 2 "Connector_PinSocket_1.27mm:PinSocket_1x03_P1.27mm_Vertical" H 3850 2050 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/661741.pdf" H 3650 1950 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/661741.pdf" H 3675 1745 50  0001 C CNN
 	1    3650 1950
 	1    0    0    -1  
 $EndComp
