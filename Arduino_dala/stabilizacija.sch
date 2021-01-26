@@ -1,0 +1,433 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5FAEB6F2
+P 1850 1750
+AR Path="/5F96891C/5FAEB6F2" Ref="BT?"  Part="1" 
+AR Path="/5FAE5DA8/5FAEB6F2" Ref="BT1"  Part="1" 
+AR Path="/5FCFA5C1/5FAEB6F2" Ref="BT1"  Part="1" 
+F 0 "BT1" H 1968 1846 50  0000 L CNN
+F 1 "3,7V" H 1968 1755 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 1850 1810 50  0001 C CNN
+F 3 "~" V 1850 1810 50  0001 C CNN
+	1    1850 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5FAEB6F8
+P 1850 1880
+AR Path="/5F96891C/5FAEB6F8" Ref="#PWR?"  Part="1" 
+AR Path="/5FAE5DA8/5FAEB6F8" Ref="#PWR01"  Part="1" 
+AR Path="/5FCFA5C1/5FAEB6F8" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 1850 1630 50  0001 C CNN
+F 1 "GNDREF" H 1855 1707 50  0000 C CNN
+F 2 "" H 1850 1880 50  0001 C CNN
+F 3 "" H 1850 1880 50  0001 C CNN
+	1    1850 1880
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 1550 6850 1800
+$Comp
+L Device:R R5
+U 1 1 5FAF9F87
+P 4400 1900
+F 0 "R5" H 4470 1946 50  0000 L CNN
+F 1 "390" H 4470 1855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4330 1900 50  0001 C CNN
+F 3 "~" H 4400 1900 50  0001 C CNN
+	1    4400 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D2
+U 1 1 5FAFAD82
+P 4400 1650
+F 0 "D2" H 4400 1885 50  0000 C CNN
+F 1 "LED_Small" H 4400 1794 50  0000 C CNN
+F 2 "LED_THT:LED_D4.0mm" V 4400 1650 50  0001 C CNN
+F 3 "~" V 4400 1650 50  0001 C CNN
+	1    4400 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_NPN_CEB Q1
+U 1 1 5FAFC741
+P 3750 2450
+F 0 "Q1" H 3941 2496 50  0000 L CNN
+F 1 "Q_NPN_CEB" H 3941 2405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3950 2550 50  0001 C CNN
+F 3 "~" H 3750 2450 50  0001 C CNN
+	1    3750 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PNP_BCE Q2
+U 1 1 5FAFDA87
+P 3850 1650
+F 0 "Q2" V 4178 1650 50  0000 C CNN
+F 1 "Q_PNP_BCE" V 4087 1650 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:ATPAK-2" H 4050 1750 50  0001 C CNN
+F 3 "~" H 3850 1650 50  0001 C CNN
+	1    3850 1650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FAFE955
+P 3850 2050
+F 0 "R4" H 3920 2096 50  0000 L CNN
+F 1 "220" H 3920 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3780 2050 50  0001 C CNN
+F 3 "~" H 3850 2050 50  0001 C CNN
+	1    3850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FAFF0E8
+P 3500 1700
+F 0 "R3" H 3570 1746 50  0000 L CNN
+F 1 "4k7" H 3570 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3430 1700 50  0001 C CNN
+F 3 "~" H 3500 1700 50  0001 C CNN
+	1    3500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FAFF34C
+P 3150 1700
+F 0 "R1" H 3220 1746 50  0000 L CNN
+F 1 "100" H 3220 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3080 1700 50  0001 C CNN
+F 3 "~" H 3150 1700 50  0001 C CNN
+	1    3150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D1
+U 1 1 5FAFFA6A
+P 3150 2100
+F 0 "D1" V 3104 2179 50  0000 L CNN
+F 1 "3V" V 3195 2179 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 3150 2100 50  0001 C CNN
+F 3 "~" H 3150 2100 50  0001 C CNN
+	1    3150 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 1550 3500 1550
+Connection ~ 3150 1550
+Wire Wire Line
+	3150 1550 2850 1550
+Connection ~ 3500 1550
+Wire Wire Line
+	3500 1550 3150 1550
+Wire Wire Line
+	3500 1850 3850 1850
+Wire Wire Line
+	3850 1850 3850 1900
+Connection ~ 3850 1850
+Wire Wire Line
+	3850 2250 3850 2200
+Wire Wire Line
+	3850 2650 3850 2700
+Wire Wire Line
+	3850 2700 3600 2700
+Wire Wire Line
+	3550 2450 3150 2450
+Wire Wire Line
+	3150 2450 3150 2250
+Wire Wire Line
+	3300 2700 3150 2700
+Wire Wire Line
+	3150 2700 3150 2450
+Connection ~ 3150 2450
+Wire Wire Line
+	3150 1950 3150 1850
+Wire Wire Line
+	2250 1550 1850 1550
+Text GLabel 7600 1550 2    50   Input ~ 0
+PWR
+$Comp
+L power:GNDREF #PWR02
+U 1 1 5FB1274C
+P 3850 2700
+F 0 "#PWR02" H 3850 2450 50  0001 C CNN
+F 1 "GNDREF" H 3855 2527 50  0000 C CNN
+F 2 "" H 3850 2700 50  0001 C CNN
+F 3 "" H 3850 2700 50  0001 C CNN
+	1    3850 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 3850 2700
+$Comp
+L power:GNDREF #PWR03
+U 1 1 5FB19113
+P 4400 2130
+F 0 "#PWR03" H 4400 1880 50  0001 C CNN
+F 1 "GNDREF" H 4405 1957 50  0000 C CNN
+F 2 "" H 4400 2130 50  0001 C CNN
+F 3 "" H 4400 2130 50  0001 C CNN
+	1    4400 2130
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FAEDE56
+P 6850 1950
+F 0 "C2" H 6965 1996 50  0000 L CNN
+F 1 "10u" H 6965 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6888 1800 50  0001 C CNN
+F 3 "~" H 6850 1950 50  0001 C CNN
+	1    6850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FAEDCFF
+P 5190 2100
+F 0 "C1" H 4940 2150 50  0000 L CNN
+F 1 "0u1" H 4925 2070 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5228 1950 50  0001 C CNN
+F 3 "~" H 5190 2100 50  0001 C CNN
+	1    5190 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5FAED40E
+P 6415 2155
+F 0 "R8" H 6485 2201 50  0000 L CNN
+F 1 "200k" H 6485 2110 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6345 2155 50  0001 C CNN
+F 3 "~" H 6415 2155 50  0001 C CNN
+	1    6415 2155
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5FAED65C
+P 6415 1705
+F 0 "R7" H 6485 1751 50  0000 L CNN
+F 1 "1M8" H 6485 1660 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6345 1705 50  0001 C CNN
+F 3 "~" H 6415 1705 50  0001 C CNN
+	1    6415 1705
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR04
+U 1 1 5FB12EA5
+P 6300 2420
+F 0 "#PWR04" H 6300 2170 50  0001 C CNN
+F 1 "GNDREF" H 6305 2247 50  0000 C CNN
+F 2 "" H 6300 2420 50  0001 C CNN
+F 3 "" H 6300 2420 50  0001 C CNN
+	1    6300 2420
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1550 4400 1550
+Wire Wire Line
+	6415 1550 6850 1550
+Connection ~ 6850 1550
+$Comp
+L Device:R R9
+U 1 1 5FD4F768
+P 5190 1700
+F 0 "R9" H 4990 1750 50  0000 L CNN
+F 1 "100" H 4990 1650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5120 1700 50  0001 C CNN
+F 3 "~" H 5190 1700 50  0001 C CNN
+	1    5190 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5FD5089F
+P 4760 1700
+F 0 "C5" H 4645 1795 50  0000 L CNN
+F 1 "10u" H 4605 1595 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4798 1550 50  0001 C CNN
+F 3 "~" H 4760 1700 50  0001 C CNN
+	1    4760 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6300 2420
+Wire Wire Line
+	6415 2305 6415 2420
+Wire Wire Line
+	4400 1545 4400 1550
+Connection ~ 4400 1550
+Wire Wire Line
+	4400 2130 4400 2050
+$Comp
+L Device:R R2
+U 1 1 5FAFF5C0
+P 3450 2700
+F 0 "R2" V 3243 2700 50  0000 C CNN
+F 1 "180" V 3334 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3380 2700 50  0001 C CNN
+F 3 "~" H 3450 2700 50  0001 C CNN
+	1    3450 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 1880 1850 1850
+$Comp
+L Switch:SW_DIP_x01 SW1
+U 1 1 5FD8B25A
+P 2550 1550
+F 0 "SW1" H 2550 1817 50  0000 C CNN
+F 1 "SW_DIP_x01" H 2550 1726 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm" H 2550 1550 50  0001 C CNN
+F 3 "~" H 2550 1550 50  0001 C CNN
+	1    2550 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5FAEF2D1
+P 5835 985
+F 0 "L1" V 6025 985 50  0000 C CNN
+F 1 "2R2" V 5934 985 50  0000 C CNN
+F 2 "Inductor_SMD:L_Wuerth_WE-PD4-Typ-X" H 5835 985 50  0001 C CNN
+F 3 "~" H 5835 985 50  0001 C CNN
+	1    5835 985 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6415 1855 6415 1860
+Wire Wire Line
+	6260 1860 6415 1860
+Connection ~ 6415 1860
+Wire Wire Line
+	6415 1860 6415 2005
+Wire Wire Line
+	6415 1555 6415 1550
+Wire Wire Line
+	6415 1550 6260 1550
+Connection ~ 6415 1550
+Wire Wire Line
+	6260 1750 6260 1860
+Wire Wire Line
+	6260 1350 6260 985 
+Wire Wire Line
+	5985 985  6260 985 
+Wire Wire Line
+	5460 1350 5460 985 
+Wire Wire Line
+	5460 985  5685 985 
+Wire Wire Line
+	5460 1550 5190 1550
+Wire Wire Line
+	6850 1550 7600 1550
+Wire Wire Line
+	6850 2100 6850 2420
+Wire Wire Line
+	6300 2420 6415 2420
+Connection ~ 6415 2420
+Wire Wire Line
+	6415 2420 6850 2420
+Wire Wire Line
+	5190 1845 5190 1850
+Wire Wire Line
+	5190 1950 5460 1950
+Connection ~ 5460 1950
+Wire Wire Line
+	5460 1750 5460 1650
+Wire Wire Line
+	5460 1950 5460 1750
+Connection ~ 5460 1750
+$Comp
+L Regulator_Switching:TPS63000 U2
+U 1 1 5FDA17E2
+P 5860 1750
+F 0 "U2" H 5860 2417 50  0000 C CNN
+F 1 "TPS63000" H 5860 2326 50  0000 C CNN
+F 2 "Package_SON:Texas_DRC0010J_ThermalVias" H 6710 1200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps63000.pdf" H 5560 2300 50  0001 C CNN
+	1    5860 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5190 1950
+Wire Wire Line
+	5190 2420 5190 2250
+Wire Wire Line
+	5860 2350 5860 2420
+Connection ~ 5860 2420
+Wire Wire Line
+	5860 2420 6300 2420
+Wire Wire Line
+	5190 2420 5760 2420
+Wire Wire Line
+	5760 2350 5760 2420
+Connection ~ 5760 2420
+Wire Wire Line
+	5760 2420 5860 2420
+Connection ~ 4760 1550
+Wire Wire Line
+	4760 1550 4400 1550
+Wire Wire Line
+	4760 1850 4760 2420
+Wire Wire Line
+	4760 2420 5190 2420
+Connection ~ 5190 2420
+Connection ~ 5190 1550
+Wire Wire Line
+	5190 1550 4760 1550
+Connection ~ 5190 1850
+Wire Wire Line
+	5190 1850 5190 1950
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5FD3A00D
+P 6415 1550
+F 0 "TP2" H 6473 1668 50  0000 L CNN
+F 1 "Vout" H 6473 1577 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 6615 1550 50  0001 C CNN
+F 3 "~" H 6615 1550 50  0001 C CNN
+	1    6415 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5FD3A979
+P 6415 1860
+F 0 "TP3" V 6369 2048 50  0000 L CNN
+F 1 "FB" V 6460 2048 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 6615 1860 50  0001 C CNN
+F 3 "~" H 6615 1860 50  0001 C CNN
+	1    6415 1860
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5FD3BC2A
+P 6260 985
+F 0 "TP1" H 6318 1103 50  0000 L CNN
+F 1 "L" H 6318 1012 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 6460 985 50  0001 C CNN
+F 3 "~" H 6460 985 50  0001 C CNN
+	1    6260 985 
+	1    0    0    -1  
+$EndComp
+Connection ~ 6260 985 
+$EndSCHEMATC

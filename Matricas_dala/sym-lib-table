@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name MyLibrary)(type Legacy)(uri "C:/Users/Acer/Desktop/Macibas/2sem/kursa projekts/kursa projekts 2/MyLibrary.lib")(options "")(descr ""))
+  (lib (name kursa_projekts_2-cache)(type Legacy)(uri "C:/Users/Acer/Desktop/Macibas/2sem/kursa projekts/kursa projekts 2/kursa projekts 2-cache.lib")(options "")(descr ""))
+)
