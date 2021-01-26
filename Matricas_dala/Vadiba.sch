@@ -216,8 +216,6 @@ Wire Wire Line
 	900  2000 900  1850
 Wire Wire Line
 	900  1500 1800 1500
-Text GLabel 1900 1500 2    50   Input ~ 0
-Vcc
 Text GLabel 1900 3150 2    50   Input ~ 0
 Vcc
 Text GLabel 1900 5000 2    50   Input ~ 0
@@ -254,43 +252,43 @@ $EndComp
 Text GLabel 3050 950  2    50   Input ~ 0
 R1
 Text GLabel 3050 3050 2    50   Input ~ 0
-G1
-Text GLabel 3050 5050 2    50   Input ~ 0
-B1
-Text GLabel 3850 900  2    50   Input ~ 0
-R2
-Text GLabel 3850 3000 2    50   Input ~ 0
-G2
-Text GLabel 3050 3550 2    50   Input ~ 0
-G3
-Text GLabel 3050 5550 2    50   Input ~ 0
 B3
-Text GLabel 3850 1450 2    50   Input ~ 0
-R4
-Text GLabel 3850 5500 2    50   Input ~ 0
-B4
-Text GLabel 3050 1950 2    50   Input ~ 0
-R5
-Text GLabel 3050 4050 2    50   Input ~ 0
-G5
-Text GLabel 3050 6050 2    50   Input ~ 0
-B5
-Text GLabel 3850 1950 2    50   Input ~ 0
-R6
-Text GLabel 3850 4000 2    50   Input ~ 0
+Text GLabel 3050 5050 2    50   Input ~ 0
 G6
-Text GLabel 3850 6000 2    50   Input ~ 0
-B6
-Text GLabel 3050 2500 2    50   Input ~ 0
+Text GLabel 3850 900  2    50   Input ~ 0
+G1
+Text GLabel 3850 3000 2    50   Input ~ 0
+R4
+Text GLabel 3050 3550 2    50   Input ~ 0
+G4
+Text GLabel 3050 5550 2    50   Input ~ 0
 R7
-Text GLabel 3050 4550 2    50   Input ~ 0
+Text GLabel 3850 1450 2    50   Input ~ 0
+R2
+Text GLabel 3850 5500 2    50   Input ~ 0
 G7
-Text GLabel 3050 6550 2    50   Input ~ 0
+Text GLabel 3050 1950 2    50   Input ~ 0
+G2
+Text GLabel 3050 4050 2    50   Input ~ 0
+R5
+Text GLabel 3050 6050 2    50   Input ~ 0
 B7
-Text GLabel 3850 2500 2    50   Input ~ 0
+Text GLabel 3850 1950 2    50   Input ~ 0
+B2
+Text GLabel 3850 4000 2    50   Input ~ 0
+G5
+Text GLabel 3850 6000 2    50   Input ~ 0
 R8
-Text GLabel 3850 4500 2    50   Input ~ 0
+Text GLabel 3050 2500 2    50   Input ~ 0
+R3
+Text GLabel 3050 4550 2    50   Input ~ 0
+B5
+Text GLabel 3050 6550 2    50   Input ~ 0
 G8
+Text GLabel 3850 2500 2    50   Input ~ 0
+G3
+Text GLabel 3850 4500 2    50   Input ~ 0
+R6
 Text GLabel 3850 6500 2    50   Input ~ 0
 B8
 Text GLabel 6250 6150 2    50   Input ~ 0
@@ -772,182 +770,6 @@ F 3 "~" H 2300 2400 50  0001 C CNN
 	1    2300 2400
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small R25
-U 1 1 5FD635A7
-P 2300 3350
-F 0 "R25" V 2104 3350 50  0000 C CNN
-F 1 "R_Small" V 2195 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 3350 50  0001 C CNN
-F 3 "~" H 2300 3350 50  0001 C CNN
-	1    2300 3350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R26
-U 1 1 5FD635AD
-P 2300 3450
-F 0 "R26" V 2104 3450 50  0000 C CNN
-F 1 "R_Small" V 2195 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 3450 50  0001 C CNN
-F 3 "~" H 2300 3450 50  0001 C CNN
-	1    2300 3450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R27
-U 1 1 5FD635B3
-P 2300 3550
-F 0 "R27" V 2104 3550 50  0000 C CNN
-F 1 "R_Small" V 2195 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 3550 50  0001 C CNN
-F 3 "~" H 2300 3550 50  0001 C CNN
-	1    2300 3550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R28
-U 1 1 5FD635B9
-P 2300 3650
-F 0 "R28" V 2104 3650 50  0000 C CNN
-F 1 "R_Small" V 2195 3650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 3650 50  0001 C CNN
-F 3 "~" H 2300 3650 50  0001 C CNN
-	1    2300 3650
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R29
-U 1 1 5FD635BF
-P 2300 3750
-F 0 "R29" V 2104 3750 50  0000 C CNN
-F 1 "R_Small" V 2195 3750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 3750 50  0001 C CNN
-F 3 "~" H 2300 3750 50  0001 C CNN
-	1    2300 3750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R30
-U 1 1 5FD635C5
-P 2300 3850
-F 0 "R30" V 2104 3850 50  0000 C CNN
-F 1 "R_Small" V 2195 3850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 3850 50  0001 C CNN
-F 3 "~" H 2300 3850 50  0001 C CNN
-	1    2300 3850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R31
-U 1 1 5FD635CB
-P 2300 3950
-F 0 "R31" V 2104 3950 50  0000 C CNN
-F 1 "R_Small" V 2195 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 3950 50  0001 C CNN
-F 3 "~" H 2300 3950 50  0001 C CNN
-	1    2300 3950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R32
-U 1 1 5FD635D1
-P 2300 4050
-F 0 "R32" V 2104 4050 50  0000 C CNN
-F 1 "R_Small" V 2195 4050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 4050 50  0001 C CNN
-F 3 "~" H 2300 4050 50  0001 C CNN
-	1    2300 4050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R33
-U 1 1 5FD68EDB
-P 2300 5200
-F 0 "R33" V 2104 5200 50  0000 C CNN
-F 1 "R_Small" V 2195 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5200 50  0001 C CNN
-F 3 "~" H 2300 5200 50  0001 C CNN
-	1    2300 5200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R34
-U 1 1 5FD68EE1
-P 2300 5300
-F 0 "R34" V 2104 5300 50  0000 C CNN
-F 1 "R_Small" V 2195 5300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5300 50  0001 C CNN
-F 3 "~" H 2300 5300 50  0001 C CNN
-	1    2300 5300
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R35
-U 1 1 5FD68EE7
-P 2300 5400
-F 0 "R35" V 2104 5400 50  0000 C CNN
-F 1 "R_Small" V 2195 5400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5400 50  0001 C CNN
-F 3 "~" H 2300 5400 50  0001 C CNN
-	1    2300 5400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R36
-U 1 1 5FD68EED
-P 2300 5500
-F 0 "R36" V 2104 5500 50  0000 C CNN
-F 1 "R_Small" V 2195 5500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5500 50  0001 C CNN
-F 3 "~" H 2300 5500 50  0001 C CNN
-	1    2300 5500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R37
-U 1 1 5FD68EF3
-P 2300 5600
-F 0 "R37" V 2104 5600 50  0000 C CNN
-F 1 "R_Small" V 2195 5600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5600 50  0001 C CNN
-F 3 "~" H 2300 5600 50  0001 C CNN
-	1    2300 5600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R38
-U 1 1 5FD68EF9
-P 2300 5700
-F 0 "R38" V 2104 5700 50  0000 C CNN
-F 1 "R_Small" V 2195 5700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5700 50  0001 C CNN
-F 3 "~" H 2300 5700 50  0001 C CNN
-	1    2300 5700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R39
-U 1 1 5FD68EFF
-P 2300 5800
-F 0 "R39" V 2104 5800 50  0000 C CNN
-F 1 "R_Small" V 2195 5800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5800 50  0001 C CNN
-F 3 "~" H 2300 5800 50  0001 C CNN
-	1    2300 5800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R40
-U 1 1 5FD68F05
-P 2300 5900
-F 0 "R40" V 2104 5900 50  0000 C CNN
-F 1 "R_Small" V 2195 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5900 50  0001 C CNN
-F 3 "~" H 2300 5900 50  0001 C CNN
-	1    2300 5900
-	0    1    1    0   
-$EndComp
 Text GLabel 3850 1300 2    50   Input ~ 0
 Vcc
 Text GLabel 3050 1850 2    50   Input ~ 0
@@ -1011,9 +833,9 @@ Wire Wire Line
 Wire Wire Line
 	2600 2400 2400 2400
 Text GLabel 3850 5000 2    50   Input ~ 0
-B2
+B6
 Text GLabel 3050 1450 2    50   Input ~ 0
-R3
+B1
 $Comp
 L MyLibrary:BC807RA U11
 U 2 1 60011028
@@ -1158,7 +980,7 @@ F 3 "" H 3800 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3850 3500 2    50   Input ~ 0
-G4
+B4
 Wire Wire Line
 	2750 3250 2750 3350
 Wire Wire Line
@@ -1463,4 +1285,182 @@ Wire Wire Line
 	1350 1900 1350 3550
 Wire Wire Line
 	1250 2200 1250 3850
+Text GLabel 1900 1500 2    50   Input ~ 0
+Vcc
+$Comp
+L Device:R_Small R8
+U 1 1 601CF826
+P 2300 3350
+F 0 "R8" V 2300 3345 50  0000 C CNN
+F 1 "150" V 2295 3495 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 3350 50  0001 C CNN
+F 3 "~" H 2300 3350 50  0001 C CNN
+	1    2300 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 601CF82C
+P 2300 3450
+F 0 "R9" V 2300 3455 50  0000 C CNN
+F 1 "100" V 2300 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 3450 50  0001 C CNN
+F 3 "~" H 2300 3450 50  0001 C CNN
+	1    2300 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R10
+U 1 1 601CF832
+P 2300 3550
+F 0 "R10" V 2300 3555 50  0000 C CNN
+F 1 "100" V 2290 3695 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 3550 50  0001 C CNN
+F 3 "~" H 2300 3550 50  0001 C CNN
+	1    2300 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 601CF838
+P 2300 3650
+F 0 "R11" V 2300 3645 50  0000 C CNN
+F 1 "150" V 2290 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 3650 50  0001 C CNN
+F 3 "~" H 2300 3650 50  0001 C CNN
+	1    2300 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R12
+U 1 1 601CF83E
+P 2300 3750
+F 0 "R12" V 2295 3750 50  0000 C CNN
+F 1 "100" V 2290 3905 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 3750 50  0001 C CNN
+F 3 "~" H 2300 3750 50  0001 C CNN
+	1    2300 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 601CF844
+P 2300 3850
+F 0 "R13" V 2300 3855 50  0000 C CNN
+F 1 "100" V 2290 4015 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 3850 50  0001 C CNN
+F 3 "~" H 2300 3850 50  0001 C CNN
+	1    2300 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R14
+U 1 1 601CF84A
+P 2300 3950
+F 0 "R14" V 2300 3950 50  0000 C CNN
+F 1 "150" V 2300 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 3950 50  0001 C CNN
+F 3 "~" H 2300 3950 50  0001 C CNN
+	1    2300 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 601CF850
+P 2300 4050
+F 0 "R15" V 2300 4050 50  0000 C CNN
+F 1 "100" V 2285 4205 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 4050 50  0001 C CNN
+F 3 "~" H 2300 4050 50  0001 C CNN
+	1    2300 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R16
+U 1 1 6020C844
+P 2300 5200
+F 0 "R16" V 2300 5195 50  0000 C CNN
+F 1 "150" V 2295 5345 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5200 50  0001 C CNN
+F 3 "~" H 2300 5200 50  0001 C CNN
+	1    2300 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R25
+U 1 1 6020C84A
+P 2300 5300
+F 0 "R25" V 2300 5305 50  0000 C CNN
+F 1 "100" V 2300 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5300 50  0001 C CNN
+F 3 "~" H 2300 5300 50  0001 C CNN
+	1    2300 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R26
+U 1 1 6020C850
+P 2300 5400
+F 0 "R26" V 2300 5405 50  0000 C CNN
+F 1 "100" V 2290 5545 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5400 50  0001 C CNN
+F 3 "~" H 2300 5400 50  0001 C CNN
+	1    2300 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R27
+U 1 1 6020C856
+P 2300 5500
+F 0 "R27" V 2300 5495 50  0000 C CNN
+F 1 "150" V 2290 5650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5500 50  0001 C CNN
+F 3 "~" H 2300 5500 50  0001 C CNN
+	1    2300 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R28
+U 1 1 6020C85C
+P 2300 5600
+F 0 "R28" V 2295 5600 50  0000 C CNN
+F 1 "100" V 2290 5755 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5600 50  0001 C CNN
+F 3 "~" H 2300 5600 50  0001 C CNN
+	1    2300 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R29
+U 1 1 6020C862
+P 2300 5700
+F 0 "R29" V 2300 5705 50  0000 C CNN
+F 1 "100" V 2290 5865 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5700 50  0001 C CNN
+F 3 "~" H 2300 5700 50  0001 C CNN
+	1    2300 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R30
+U 1 1 6020C868
+P 2300 5800
+F 0 "R30" V 2300 5800 50  0000 C CNN
+F 1 "150" V 2300 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5800 50  0001 C CNN
+F 3 "~" H 2300 5800 50  0001 C CNN
+	1    2300 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R31
+U 1 1 6020C86E
+P 2300 5900
+F 0 "R31" V 2300 5900 50  0000 C CNN
+F 1 "100" V 2285 6055 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2300 5900 50  0001 C CNN
+F 3 "~" H 2300 5900 50  0001 C CNN
+	1    2300 5900
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
